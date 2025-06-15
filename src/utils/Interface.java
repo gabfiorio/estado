@@ -95,8 +95,8 @@ public class Interface extends JFrame {
                     NomesCapitais.NOMES.get(destino));
         } else {
             StringBuilder sb = new StringBuilder();
-            sb.append("Distância total: ").append(rota.distanciaTotal).append(" km\n\n");
-            sb.append("Caminho:\n");
+            sb.append("Distância total: ").append(rota.distanciaTotal).append(" km\n");
+            sb.append("Caminho:");
             for (int i = 0; i < rota.caminho.size(); i++) {
                 String sigla = rota.caminho.get(i);
                 sb.append(NomesCapitais.NOMES.get(sigla)).append(" (").append(sigla).append(")");
